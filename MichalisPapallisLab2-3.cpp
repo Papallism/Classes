@@ -21,21 +21,16 @@ class fraction{
 
 int main()
 {
-	fraction f(1, 4), g(2, 4), h;
-	cout << f.numerator() << "/" << f.denominator() << endl;
-	cout << g.numerator() << "/" << g.denominator() << endl;
-	cout << endl;
-    h.divide(f, g);
-    cout << h.numerator() << "/" << h.denominator() << endl;
-    h.mult(f, g);
-    cout << h.numerator() << "/" << h.denominator() << endl;
-    h.dif(f, g);
-    cout << h.numerator() << "/" << h.denominator() << endl;
-    f = f.add(h);
-    f = f.add(g);
-    cout << f.numerator() << "/" << f.denominator() << endl;
-    f.reduce();
-    cout << f.numerator() << "/" << f.denominator() << endl;
+    fraction sum1, sum2;
+    fraction frac[4];
+    frac[0].assign(3, 4);
+	frac[1].assign(2, 5);
+	frac[2].assign(1, 3);
+	frac[3].assign(1, 4);
+	sum1 = frac[0].add(frac[1]);
+	cout << frac[0].numerator() << "/" << frac[0].denominator() << " + " << frac[1].numerator() << "/" << frac[1].denominator() << " = " << sum1.numerator() << "/" << sum1.denominator() << endl;
+	sum2 = frac[2].add(frac[3]);
+	cout << frac[2].numerator() << "/" << frac[2].denominator() << " + " << frac[3].numerator() << "/" << frac[3].denominator() << " = " << sum2.numerator() << "/" << sum2.denominator() << endl;
 
 return 0;
 }
