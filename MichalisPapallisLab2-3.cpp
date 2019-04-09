@@ -111,28 +111,3 @@ void fraction::reduce()
     num /= q;
     denom /= q;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
